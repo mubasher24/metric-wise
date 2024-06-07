@@ -1,5 +1,6 @@
 import React from "react";
 import { vehicle } from "../../../data/Finance";
+import Image from "next/image";
 
 const Feature = () => {
 
@@ -27,7 +28,7 @@ const Feature = () => {
                     }`}
                   >
                     <div className="flex items-center gap-5">
-                      <img src={item.icon} alt="" />
+                    <Image src={item.icon} width={60} height={60} alt="" />
                       <h1 className="font-20 font-inter font-bold leading-6">
                         {item.head}
                       </h1>
@@ -46,7 +47,7 @@ const Feature = () => {
                 ))}
               </div>
               <div className="">
-                <img src="/banking.png" alt="" />
+                <Image src="/banking.png" width={990} height={540} alt="" />
               </div>
             </div>
             <div></div>

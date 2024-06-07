@@ -2,16 +2,20 @@ import Link from "next/link";
 import React from "react";
 import Feature from "./Feature";
 import E_commercecard from "./E_commercecard";
+import Image from "next/image";
+import { PiGreaterThanLight } from "react-icons/pi";
+
 const e_commerce = () => {
   return (
     <div>
       <div className="widthclass">
         <div className="p-8 sm:p-16 2xl:p-10">
           <div className="flex items-center">
-            <h1 className="pt-16 font-20 black font-normal font-inter">
+            <h1 className="pt-16 font-24 black font-normal font-inter flex items-center gap-2">
               Metricwise
-              <span className="font-20 font-normal font-inter opacity-50">
-                &gt; Solutions &gt; Industries &gt; Retail & Ecommerce
+              <span className="font-20 font-normal font-inter opacity-50 flex items-center gap-2">
+                <PiGreaterThanLight size={15}/> Solutions <PiGreaterThanLight size={15}/>
+                Industries <PiGreaterThanLight size={15}/> Retail & Ecommerce
               </span>
             </h1>
           </div>
@@ -31,12 +35,18 @@ const e_commerce = () => {
                 className="font-20 font-normal font-inter leading-6 bg-[#042440] white rounded-[8px] w-[214px] h-[52px] flex gap-3 justify-center   items-center"
               >
                 Book a Demo
-                <img src="/free.png" className="w-[26px]" alt="" />
+                <Image
+                  src="/free.png"
+                  width={24}
+                  height={24}
+                  className=" "
+                  alt=""
+                />
               </Link>
             </div>
             <div className="flex justify-end items-end">
-              <img src="/commerce.png" alt="moni" />
-            </div>  
+              <Image src="/commerce.png" width={540} height={540} alt="moni" />
+            </div>
           </div>
         </div>
       </div>

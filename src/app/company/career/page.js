@@ -4,7 +4,7 @@ import Career from './Career'
 const page = () => {
   return (
     <div>
-      <Career/>
+        <Career/>
     </div>
   )
 }

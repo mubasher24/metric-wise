@@ -38,7 +38,7 @@ import {
   Industry,
 } from "../data/Head";
 import Link from "next/link";
-import Tab from "./Tab";
+import Image from "next/image";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -64,7 +64,7 @@ export default function Example() {
       >
         <div className="flex xl:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
-            <img className="h-7 mx-auto" src="/logo.png" alt="logo" />
+            <Image width={184} height={25}  className="mx-auto" src="/logo.png" alt="logo" />
           </Link>
         </div>
         <div className="flex xl:hidden">
@@ -119,7 +119,7 @@ export default function Example() {
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <img src={item.icon} alt="" className="h-10 w-10" />
+                        <Image width={40} height={40} src={item.icon} alt="" />
                       </div>
                       <div className="flex-auto">
                         <Link
@@ -200,7 +200,7 @@ export default function Example() {
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <img src={item.icon} alt="" className="h-10 w-10" />
+                        <Image width={40} height={40} src={item.icon} alt="" />
                       </div>
                       <div className="flex-auto">
                         <Link
@@ -269,7 +269,7 @@ export default function Example() {
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <img src={item.icon} alt="" className="h-10 w-10" />
+                        <Image width={40} height={40} src={item.icon} alt="" />
                       </div>
                       <div className="flex-auto">
                         <Link
@@ -329,7 +329,7 @@ export default function Example() {
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <img src={item.icon} alt="" className="h-10 w-10" />
+                        <Image width={40} height={40} src={item.icon} alt="" />
                       </div>
                       <div className="flex-auto">
                         <Link
@@ -387,7 +387,7 @@ export default function Example() {
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <img src={item.icon} alt="" className="h-10 w-10" />
+                        <Image width={40} height={40} src={item.icon} alt="" />
                       </div>
                       <div className="flex-auto">
                         <Link
@@ -428,7 +428,7 @@ export default function Example() {
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
-              <img className="h-8 w-auto" src="/logo.png" alt="" />
+              <Image width={184} height={25}  className="w-auto" src="/logo.png" alt="logo" />
             </a>
             <button
               type="button"

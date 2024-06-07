@@ -2,7 +2,7 @@
 import React from "react";
 import { useState } from "react";
 import CalendarComponent from "./Calendar";
-import { CalendarDaysIcon } from "@heroicons/react/20/solid";
+import Image from "next/image";
 
 const Demo = () => {
   const [section, setSection] = useState(1);
@@ -21,7 +21,7 @@ const Demo = () => {
         {section === 1 && (
           <div className="grid lg:grid-cols-2 max-w-[1040px] bg-[#FFFFFF] flex-col justify-center items-center m-auto rounded-[40px] p-20 gap-10 shadow-xl">
             <div>
-              <img src="/logo.png" alt="logo" className="mb-5" />
+              <Image width={140} height={20} src="/logo.png" alt="logo" className="mb-5" />
               <label
                 htmlFor=""
                 className="font-16 fontregular leading-5 paragraph"
@@ -33,12 +33,12 @@ const Demo = () => {
               </h1>
               <ul className="mt-8">
                 <li className="flex items-center gap-4 font-16 fontsemibold leading-5 text-[#747273]">
-                  <img src="/demo1.png" alt="demo1" />
+                  <Image width={24} height={24} src="/demo1.png" alt="demo1" />
                   Find a time to explore the capabilities of Metricwise tailored
                   to your needs.
                 </li>
                 <li className="flex items-center gap-4 font-16 fontsemibold leading-5 text-[#747273] mt-5">
-                  <img src="/demo2.png" alt="demo2" />
+                  <Image width={24} height={24} src="/demo2.png" alt="demo2" />
                   Upon confirmation, you will receive the details for the web
                   conferencing session.
                 </li>
@@ -70,7 +70,7 @@ const Demo = () => {
           <div className="grid lg:grid-cols-2 max-w-[1040px] bg-[#FFFFFF] flex-col justify-center items-center m-auto rounded-[40px] p-20 gap-10 shadow-xl">
             <div>
               <div>
-                <img src="/logo.png" alt="logo" className="mb-5" />
+              <Image width={140} height={20} src="/logo.png" alt="logo" className="mb-5" />
                 <label
                   htmlFor=""
                   className="font-16 fontregular leading-5 paragraph"
@@ -82,12 +82,12 @@ const Demo = () => {
                 </h1>
                 <ul className="mt-8">
                   <li className="flex items-center gap-4 font-16 fontsemibold leading-5 text-[#747273]">
-                    <img src="/demo1.png" alt="demo1" />
+                  <Image width={24} height={24} src="/demo1.png" alt="demo1" />
                     Find a time to explore the capabilities of Metricwise
                     tailored to your needs.
                   </li>
                   <li className="flex items-center gap-4 font-16 fontsemibold leading-5 text-[#747273] mt-5">
-                    <img src="/demo2.png" alt="demo2" />
+                  <Image width={24} height={24} src="/demo2.png" alt="demo2" />
                     Upon confirmation, you will receive the details for the web
                     conferencing session.
                   </li>
@@ -101,7 +101,7 @@ const Demo = () => {
             </div>
             <div className="">
               <div className="flex justify-center lg:justify-end">
-                <img src="/calendar2.png" alt="" />
+                <Image width={400} height={400} src="/calendar2.png" alt="" />
               </div>
               <div className="flex justify-end items-center mt-5 gap-5">
                 <button
@@ -125,7 +125,7 @@ const Demo = () => {
           <div className="grid lg:grid-cols-2 max-w-[1040px] bg-[#FFFFFF] flex-col justify-center m-auto rounded-[40px] p-20 gap-10 shadow-xl">
             <div>
               <div>
-                <img src="/logo.png" alt="logo" className="mb-5" />
+              <Image width={140} height={20} src="/logo.png" alt="logo" className="mb-5" />
                 <label
                   htmlFor=""
                   className="font-16 fontregular leading-5 paragraph"
@@ -137,12 +137,12 @@ const Demo = () => {
                 </h1>
                 <ul className="mt-8">
                   <li className="flex items-center gap-4 font-16 fontsemibold leading-5 text-[#747273]">
-                    <img src="/demo1.png" alt="demo1" />
+                  <Image width={24} height={24} src="/demo1.png" alt="demo1" />
                     Find a time to explore the capabilities of Metricwise
                     tailored to your needs.
                   </li>
                   <li className="flex items-center gap-4 font-16 fontsemibold leading-5 text-[#747273] mt-5">
-                    <img src="/demo2.png" alt="demo2" />
+                  <Image width={24} height={24} src="/demo2.png" alt="demo2" />
                     Upon confirmation, you will receive the details for the web
                     conferencing session.
                   </li>
@@ -182,7 +182,7 @@ const Demo = () => {
                     placeholder="Your email"
                   />
                   <div className="absolute top-8 left-3">
-                    <img src="/email.png" alt="" />
+                    <Image width={20} height={20} src="/email.png" alt="" />
                   </div>
                 </div>
                 <div className="relative mt-5">
@@ -198,7 +198,9 @@ const Demo = () => {
                       <option>+1</option>
                       <option>+44</option>
                     </select>
-                    <img
+                    <Image
+                    width={12}
+                    height={6}
                       src="/downarrow.png"
                       alt="Dropdown arrow"
                       className="absolute right-3 pointer-events-none"

@@ -97,7 +97,7 @@ const Faq = () => {
             Specialist
           </li>
           <li className="font-20 fontsemibold leading-6 opacity-60">
-            Enterprise{" "}
+            Enterprise
           </li>
         </ul>
         <div>

@@ -17,12 +17,20 @@
 }
 .faq {
   background-image: url(../../public/faqbg.png);
-  background-size: cover;
+  background-size: 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.career {
+  background-image: url(../../public/careebg.png);
+  background-size: 100%;
+  background-position: right;
   background-repeat: no-repeat;
 }
 .blog {
   background-image: url(../../public/blogbg.png);
-  background-size: cover;
+  background-size: 70%;
+  background-position: right;
   background-repeat: no-repeat;
 }
 .aboutbg {
@@ -236,11 +244,17 @@
 .font-24 {
   font-size: 18px;
 }
+.font-40 {
+  font-size: 30px;
+}
 .faq {
   background-image: url(../../public/faqbg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+.blog {
+  background-size: cover;
 }
 }
 
