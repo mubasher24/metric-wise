@@ -1,22 +1,21 @@
 import Link from "next/link";
 import React from "react";
 import DataTypecard from "./DataTypecard"
-import { PiGreaterThanLight } from "react-icons/pi";
 import Image from "next/image";
 const DataType = () => {
   return (
     <div>
       <div className="widthclass">
         <div className="p-8 sm:p-16 2xl:p-10">
-          <div className="flex items-center">
-            <h1 className="pt-16 font-24 black font-normal font-inter flex items-center gap-2">
+          {/* <div className="flex items-center">
+            <h1 className=" font-24 black font-normal font-inter flex items-center flex-wrap gap-2">
               Metricwise
               <span className="flex items-center font-20 font-normal font-inter opacity-50 gap-2">
                 <PiGreaterThanLight /> Solutions <PiGreaterThanLight /> Industries <PiGreaterThanLight /> Data Type
               </span>
             </h1>
-          </div>
-          <div className="grid md:grid-cols-2 items-center mt-10 md:mt-0">
+          </div> */}
+          <div className="grid md:grid-cols-2 items-center pt-20 md:mt-0">
             <div>
               <h1 className="font-36 font-inter font-bold leading-10">
               Data Type

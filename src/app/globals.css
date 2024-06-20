@@ -4,11 +4,64 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+/* @font-face {
+  font-family: 'Inter';
+  font-weight: 100;
+  src: url('/fonts/static/Inter-Thin.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 200;
+  src: url('/fonts/static/Inter-ExtraLight.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 300;
+  src: url('/fonts/static/Inter-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 400;
+  src: url('/fonts/static/Inter-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 500;
+  src: url('/fonts/static/Inter-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 600;
+  src: url('/fonts/static/Inter-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 700;
+  src: url('/fonts/static/Inter-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 800;
+  src: url('/fonts/static/Inter-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 900;
+  src: url('/fonts/static/Inter-Black.ttf') format('truetype');
+} */
+
+
+
 * {
   margin: 0;
   padding: 0;
 }
-
+  /* .performanceimgbg {
+    background-image: url(../../public/performanceimgbg.png);
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+  } */
 .demoparent {
   background-image: url(../../public/wavebg1.png);
   background-position: center;
@@ -18,19 +71,19 @@
 .faq {
   background-image: url(../../public/faqbg.png);
   background-size: 100%;
-  background-position: right;
+  background-position: bottom right;
   background-repeat: no-repeat;
 }
 .career {
   background-image: url(../../public/careebg.png);
   background-size: 100%;
-  background-position: right;
+  background-position: bottom;
   background-repeat: no-repeat;
 }
 .blog {
   background-image: url(../../public/blogbg.png);
-  background-size: 70%;
-  background-position: right;
+  background-position: bottom right;
+  background-size: 60%;
   background-repeat: no-repeat;
 }
 .aboutbg {
@@ -48,7 +101,7 @@
 .pricebg {
   background-image: url(../../public/pricebg.png);
   background-position: top right;
-  background-size: 70%;
+  background-size: 50%;
   background-repeat: no-repeat;
 }
 .monbg {
@@ -68,6 +121,18 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+.positionbg {
+  background-image: url(../../public/positionbg.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+.dangerbgimg {
+  background-image: url(../../public/dangerbgimg.png);
+  background-size: 80%;
+  background-position:top right;
+  background-repeat: no-repeat;
 }
 /* styles/globals.css */
 
@@ -106,39 +171,39 @@
 }
 
 .fontthin {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-weight: 100;
 }
 .fontextralight {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-weight: 200;
 }
 .fontlight {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-weight: 300;
 }
 .fontregular {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-weight: 400;
 }
 .fontmedium {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-weight: 500;
 }
 .fontsemibold {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-weight: 600;
 }
 .fontbold {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-weight: 700;
 }
 .fontextrabold {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-weight: 800;
 }
 .fontblack {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-weight: 900;
 }
 
@@ -210,8 +275,17 @@
 .font-16 {
   font-size: 16px;
 }
+.font-14 {
+  font-size: 14px;
+}
 .font-12 {
   font-size: 12px;
+}
+
+@media (max-width: 1440px) {
+  .font-36 {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 1240px) {
@@ -230,6 +304,12 @@
 .font-24 {
   font-size: 20px;
 }
+.dangerbgimg {
+  background-image: url(../../public/dangerbgimg.png);
+  background-size: 70%;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
 }
 @media (max-width: 768px) {
   .font-64 {
@@ -247,14 +327,12 @@
 .font-40 {
   font-size: 30px;
 }
-.faq {
-  background-image: url(../../public/faqbg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+
 .blog {
   background-size: cover;
+}
+.featurebg {
+  background-size: 50%;
 }
 }
 
@@ -278,4 +356,67 @@
 .font-20 {
   font-size: 16px;
 }
+.pricebg {
+  background-image: none;
+}
+}
+.featurebg {
+  background-image: url(../../public/circlebg.png);
+  background-position: center;
+  background-size: 30%;
+  background-repeat: no-repeat;
+}
+
+
+
+.card {
+  position: relative;
+  z-index: 1;
+}
+
+.card:hover {
+  z-index: 50 !important;
+}
+
+.backdrop-blur-sm {
+  backdrop-filter: blur(5px);
+}
+
+
+input {
+  --tw-ring-color: #0000001F !important;
+    box-shadow: #0000001F !important;
+    border-color: #0000001F !important;
+}
+textarea {
+  --tw-ring-color: #0000001F !important;
+    box-shadow: #0000001F !important;
+    border-color: #0000001F !important;
+}
+
+.custom-shadow {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  animation: animate 2s linear infinite;
+}
+@keyframes animate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+
+.animated-path {
+  animation: dash 5s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -100;
+  }
 }

@@ -1,0 +1,35 @@
+.spaces {
+  overflow: hidden;
+  /* background: hsla(0, 0%, 0%, 1); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* background-image: radial-gradient(
+    top,
+    circle farthest-corner,
+    hsla(330, 90%, 15%, 1) 20%,
+    hsla(0, 0%, 0%, 1) 80%
+  ); */
+  cursor: move;
+}
+
+.spaces,
+.space {
+  width: 40%;
+  margin: 0;
+}
+
+#space {
+  width: 40%;
+  height: 40%;
+  right: 0;
+  top: 150px;
+  zoom: 1.5;
+  position: absolute;
+  right: 0;
+}
+
+#space span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+}

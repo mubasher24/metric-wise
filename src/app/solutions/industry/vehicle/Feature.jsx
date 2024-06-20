@@ -1,11 +1,14 @@
+'use client'
+
 import React from "react";
 import { vehicle } from "../../../data/Finance";
 import Image from "next/image";
+import { Fade } from "react-awesome-reveal";
 
 const Feature = () => {
 
   return (
-    <div>
+    <div className="featurebg">
       <div className="widthclass">
         <div className="p-8 sm:p-16 2xl:p-10">
           <div className="flex flex-col justify-center items-center text-center m-auto">
@@ -19,8 +22,10 @@ const Feature = () => {
           <div>
             <div className="grid md:grid-cols-2 items-center gap-40 mt-24">
               <div>
+              <Fade direction="left">
                 {vehicle.map((item, index) => (
                   <div
+                  key={index}
                     className={`pb-5 mb-7 ${
                       index !== vehicle.length - 1
                         ? "border border-t-0 border-l-0 border-r-0 border-[#000000] border-opacity-[40%] border-x-8"
@@ -45,10 +50,13 @@ const Feature = () => {
                     </ul>
                   </div>
                 ))}
+                </Fade>
               </div>
+              <Fade direction="right">
               <div className="">
                 <Image src="/banking.png" width={990} height={540} alt="" />
               </div>
+              </Fade>
             </div>
             <div></div>
           </div>
